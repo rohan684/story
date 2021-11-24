@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
+    <link rel="stylesheet" href="style/design.css?v=1"/>
+    <title>Home</title>
+    <style>
+        .bkg{
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-image: url("assets/bkg.jpg");
+        }
+        .for_padding{
+            padding: 90px 10px;
+        }
+        .hh9{
+            text-align: center;
+            font-size: 60px;
+            font-weight: 700;
+        }
+        .ind_btn{
+            width: 95%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-row nav-container"  style="padding: 12px;">
+            <a href="#" class="w3-bar-item w3-col l4 m4 s6"><img src="" alt="Not supported"></a>
+            <div class="w3-col l8 m8 s6" id="nav_bar">
+                <a href="#" class="w3-bar-item w3-hide-small">Home</a>
+                <a href="#works" class="w3-bar-item w3-hide-small">How it's work</a>
+                <a href="contact.html" class="w3-bar-item w3-hide-small">Contact</a>
+                <button class="w3-bar-item w3-hide-small w3-right" onclick="document.getElementById('id01').style.display='block'"><a href="#" >Try Demo</a>
+                </button>
+                <a href="#" class="w3-bar-item w3-hide-small w3-right" onclick="document.getElementById('id01').style.display='block'">Login</a>
+                <a href="javascript:void(0)" style="color:#8a2cdc;" class="w3-bar-item w3-right w3-hide-large w3-hide-medium" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+            </div>
+          </div>
+          
+          <div id="demo" class="w3-bar-block w3-animate-bottom w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#works" class="w3-bar-item w3-button">How its's work</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'">Login</a>
+            <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'">Try Demo</a>
+          </div>
+    </div>
+    <!--popup-->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+              <form class="login_popup">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright w3-red cros_btn">&times;</span>
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password">
+                  <button>Login</button>
+              </form>
+        </div>
+    </div>
+    <!--Header-->
+    <header class="w3-display-container w3-row for_padding">
+        <div class="w3-half">
+            <h1 class="header1">Share Interactive Product Demos That Win Deals</h1>
+            <h5 class="header2">Build rich product experiences with our
+                no-code platform to wow your customers<br>            
+                <button class="header_btn" onclick="document.getElementById('id01').style.display='block'"><a href="#">Request Demo <i class="fas fa-angle-right learn_more"></i></a></button>
+            </h5>
+        </div>
+        <div class="w3-half" style="overflow: hidden;">
+            <img src="assets/header.png" alt="not_supported" width="120%">
+        </div>
+    </header>
+    <!--Trusted partners-->
+    <div class="w3-container" style="padding: 40px 10px;background-color: #f4f8ff;" id="trusted">
+        <h4 class="hh9">Trusted By Amazing Partners</h4>
+        <marquee behavior="alternate" SCROLLAMOUNT="6" direction="left" width="80%">
+            <img src="assets/prt1.svg" alt="not_supported" >
+            <img src="assets/prt2.svg" alt="not_supported">
+            <img src="assets/prt3.svg" alt="not_supported">
+            <img src="assets/prt4.svg" alt="not_supported">
+            <img src="assets/prt5.svg" alt="not_supported">
+            <img src="assets/prt6.svg" alt="not_supported">
+            <img src="assets/prt7.svg" alt="not_supported" class="lastsvg">
+        </marquee>
+    </div>
+
+    <!--Build demos-->
+    <div class="w3-container" id="build" style="padding: 60px 10px;">
+        <h1>Build Demos That Tell a Story</h1>
+        <h4>Buyers need to interact with your product before a free-trial or purchase. You can do just that - with our platform</h4>
+        <div>
+            <video width="320" height="240" autoplay loop>
+                <source src="assets/video.mp4" type="video/mp4">
+                Your browser does not support the video.
+              </video>
+        </div>
+    </div>
+    
+    <!--Benefits-->
+    <div class="w3-display-contaner" style="padding: 60px 10px;background-color: #f4f8ff;">
+        <h1 class="feature">Features</h1>
+        <h4 class="feature2">Benefit From The Key Features On Our Platform</h5>
+        <div class="w3-row-padding" style="padding: 10px;" id="cards_sec">
+            <div class="w3-col l4 m4 s12" style="padding: 15px 10px;">
+                <div class="w3-card-4 cards w3-center display cards_1">
+                    <img src="assets/coding.png" alt="not_supported" class="w3-center">
+                    <h5>No-Code Editor</h5>
+                    <p>Change text, images, copyright and anything in the product. (even add your custom html).</p>
+                </div>
+            </div>
+            <div class="w3-col l4 m4 s12" style="padding: 15px 10px;">
+                <div class="w3-card-4 cards w3-center display cards_2">
+                    <img src="assets/management.png" alt="not_supported" class="w3-center">
+                    <h5>Team Collaboration</h5>
+                    <p>Create multiple teams and effortlessly collaborate across each team with specific access level.</p>
+                </div>
+            </div>
+            <div class="w3-col l4 m4 s12" style="padding: 15px 10px;">
+                <div class="w3-card-4 cards w3-center display cards_3">
+                    <img src="assets/interactive.png" alt="not_supported" class="w3-center">
+                    <h5>Interactive Guides</h5>
+                    <p>Highlight product focus areas or create as many sequential flows using our advanced widgets.</p>
+                </div>
+            </div>
+            <div class="w3-col l4 m4 s12" style="padding: 15px 10px;">
+                <div class="w3-card-4 cards w3-center display cards_1">
+                    <img src="assets/management.png" alt="not_supported" class="w3-center">
+                    <h5>Auto Personalization</h5>
+                    <p>Automatically personalize the demo based on your prospect. Segment by role, company or location.</p>
+                </div>
+            </div>
+            <div class="w3-col l4 m4 s12" style="padding: 15px 10px;">
+                <div class="w3-card-4 cards w3-center display cards_2">
+                    <img src="assets/predictive-chart.png" alt="not_supported" class="w3-center">
+                    <h5>Analytics & Insights</h5>
+                    <p>Track the behavior of prospects based on clicks and time spent on specific pages.</p>
+                </div>
+            </div>
+            <div class="w3-col l4 m4 s12" style="padding: 15px 10px;">
+                <div class="w3-card-4 cards w3-center display cards_3">
+                    <img src="assets/link.png" alt="not_supported" class="w3-center">
+                    <h5>Sharing</h5>
+                    <p>Share demo as links, GIFs or embed on websites. Add viewing permission for shared demo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Testimonial-->
+    <div class="w3-container" style="padding: 60px 10px;background-color: #8a2cdc;position: relative;">
+        
+        <h1 class="feature" style="color: white;">Review</h1>
+        <h4 class="feature2" style="color: white;">Our Prestigious Clients</h4>
+        <!--For bigger screen-->
+        <div class="w3-content w3-container" style="padding: 20px;" id="slides">
+            <div class="mySlides" >
+                <!--First two slides-->
+                <div class="w3-col l6 m6 s12" >
+                    <div class="w3-card-4 tst_card" style="width: 90%;">
+                        <p>"Love the product! I think every SaaS company should use it!!,You won't regret it. Thank you for making it painless, pleasant and most of all hassle free!"</p>
+                        <img src="assets/tst1.png" alt="not_supported">
+                        <h5>-Jermaine K.</h5>
+                        <h6>CEO, Candidately</h6>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 s12">
+                    <div class="w3-card-4 tst_card" style="width: 90%;">
+                        <p>"It's really wonderful. We've used storylane for the last two years. Products demos always impressed me on multiple levels. Dude, your stuff is the bomb!"</p>
+                        <img src="assets/tst3.1.png" alt="not_supported">
+                        <h5>-Laverna A.</h5>
+                        <h6>CEO, Autoflex</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <!--second two slides-->
+                <div class="w3-col l6 m6 s12" >
+                    <div class="w3-card-4 tst_card" style="width: 90%;">
+                        <p>"We use Storylane! They spent time with us to learn about our use case, they helped us build out our first demos and they fixed bugs on the fly as we engaged."</p>
+                        <img src="assets/tst2.png" alt="not_supported">
+                        <h5>-Matthew Smith.</h5>
+                        <h6>CEO, Forcelib</h6>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 s12">
+                    <div class="w3-card-4 tst_card" style="width: 90%;">
+                        <p>"Products demos by storylane is exactly what our business has been lacking. Man, this thing is getting better and better as I learn more about it."</p>
+                        <img src="assets/tst4.png" alt="not_supported">
+                        <h5>-Dr Amit Narayan.</h5>
+                        <h6>CEO, Autogrid</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-center w3-container w3-section w3-large w3-text-grey w3-display-bottommiddle ind_btn">
+                <button class="w3-button  w3-display-left indicator_button" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button  w3-display-right indicator_button" onclick="plusDivs(1)">&#10095;</button>
+                <br><br><br><br><br> 
+                <div style="padding-top: 250px;">
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--How its work-->
+    <div class="w3-display-conatiner w3-row-padding" style="padding: 80px 10px 5px 10px;" id="works">
+        <h1 class="feature">How It Works</h1><br><br>
+        <!--First-->
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="assets/works.png" alt="not_supported" class="work_image display">
+            </div>
+            <div class="w3-half w3-center">
+                <img src="assets/number1.svg" alt="not_supported" class="w3-col l1 m1 s12 number_img">
+                <div class="w3-col l11 m11 s11">
+                    <h1 class="work_h1">Capture Your Products</h1>
+                    <h6 class="work_h6 display">With our browser extension you can create frontend copy of your product. We track all the product flows and stitch them.</h6>
+                </div>
+            </div>
+        </div>
+        <!--Second-->
+        <div class="w3-row-padding">
+            <div class="w3-half w3-center">
+                <div class="w3-col l11 m11 s11">
+                    <h1 class="work_h1">Customize your demo</h1>
+                    <h6 class="work_h6 display">With our click-to-edit tool, you can change anything in the product. Change links, images, content or files.</h6>
+                </div>
+                <img src="assets/number2.svg" alt="not_supported" class="w3-col l1 m1 s12 number_img">
+            </div>
+            <div class="w3-half">
+                <img src="assets/works2.png" alt="not_supported" class="work_image display">
+            </div>
+        </div>
+        <!--third-->
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="assets/works3.png" alt="not_supported" class="work_image display">
+            </div>
+            <div class="w3-half w3-center">
+                <img src="assets/number3.svg" alt="not_supported" class="w3-col l1 m1 s12 number_img">
+                <div class="w3-col l11 m11 s12">
+                    <h1 class="work_h1">Add Guides</h1>
+                    <h6 class="work_h6 display">Add widgets so you can tell the story of your product. Focus on specific features or use cases.</h6>
+                </div>
+            </div>
+        </div>
+        <!--Fourth-->
+        <div class="w3-row-padding">
+            <div class="w3-half w3-center">
+                <div class="w3-col l11 m11 s12">
+                    <h1 class="work_h1">Publish and share</h1>
+                    <h6 class="work_h6 display">Create unique links that you can share for each prospect, embed in landing websites or email campaigns.</h6>
+                </div>
+                <img src="assets/number4.svg" alt="not_supported" class="w3-col l1 m1 s12 number_img">
+            </div>
+            <div class="w3-half">
+                <img src="assets/works4.png" alt="not_supported" class="work_image display">
+            </div>
+        </div>
+        <!--Fifth-->
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="assets/works5.png" alt="not_supported" class="work_image display">
+            </div>
+            <div class="w3-half w3-center">
+                <img src="assets/number5.svg" alt="not_supported" class="w3-col l1 m1 s12 number_img">
+                <div class="w3-col l11 m11 s12">
+                    <h1 class="work_h1">Track behavior insights</h1>
+                    <h6 class="work_h6 display">Storylane provides real-time prospect activity. With our deep data insights you can optimize conversions.</h6>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!--Mobile -->
+    <!--How its work-->
+    <div class="w3-display-conatiner w3-row-padding works_mobile" style="padding: 80px 10px 5px 10px;">
+        <h1 class="feature">How It Works</h1><br><br>
+        <!--First-->
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="assets/works.png" alt="not_supported" class="work_image display">
+            </div>
+            <div class="w3-half w3-center">
+                <img src="assets/number1.svg" alt="not_supported" class="w3-col l1 m1 s12 number_img">
+                <div class="w3-col l11 m11 s12">
+                    <h1 class="work_h1">Capture Your Products</h1>
+                    <h6 class="work_h6 display">With our browser extension you can create frontend copy of your product. We track all the product flows and stitch them.</h6>
+                </div>
+            </div>
+        </div>
+        <!--Second-->
+        <div class="w3-display-container w3-row-padding" style="background-color: #f4f8ff;">
+            <div class="w3-half">
+                <img src="assets/works2.png" alt="not_supported" class="work_image display">
+            </div>
+            <div class="w3-half w3-center">
+                <img src="assets/number2.svg" alt="not_supported" class="w3-col l1 m1 s12 number_img">
+                <div class="w3-col l11 m11 s12">
+                    <h1 class="work_h1">Customize your demo</h1>
+                    <h6 class="work_h6 display">With our click-to-edit tool, you can change anything in the product. Change links, images, content or files.</h6>
+                </div>
+            </div>
+            
+        </div>
+        <!--third-->
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="assets/works3.png" alt="not_supported" class="work_image display">
+            </div>
+            <div class="w3-half w3-center">
+                <img src="assets/number3.svg" alt="not_supported" class="w3-col l1 m1 s12 number_img">
+                <div class="w3-col l11 m11 s12">
+                    <h1 class="work_h1">Add Guides</h1>
+                    <h6 class="work_h6 display">Add widgets so you can tell the story of your product. Focus on specific features or use cases.</h6>
+                </div>
+            </div>
+        </div>
+        <!--Fourth-->
+        <div class="w3-row-padding" style="background-color: #f4f8ff;">
+            <div class="w3-half">
+                <img src="assets/works4.png" alt="not_supported" class="work_image display">
+            </div>
+            <div class="w3-half w3-center">
+                <img src="assets/number4.svg" alt="not_supported" class="w3-col l1 m1 s12 number_img">
+                <div class="w3-col l11 m11 s12">
+                    <h1 class="work_h1">Publish and share</h1>
+                    <h6 class="work_h6 display">Create unique links that you can share for each prospect, embed in landing websites or email campaigns.</h6>
+                </div>
+            </div>
+            
+        </div>
+        <!--Fifth-->
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="assets/works5.png" alt="not_supported" class="work_image display">
+            </div>
+            <div class="w3-half w3-center">
+                <img src="assets/number5.svg" alt="not_supported" class="w3-col l1 m1 s12 number_img">
+                <div class="w3-col l11 m11 s12">
+                    <h1 class="work_h1">Track behavior insights</h1>
+                    <h6 class="work_h6 display">Storylane provides real-time prospect activity. With our deep data insights you can optimize conversions.</h6>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+
+    <!--Integartes-->
+    <div class="w3-display-container w3-row-padding" style="padding: 50px 10px;background-color: #f4f8ff;">
+        <div class="w3-half">
+            <h1 class="hh1">Integrate with all your tools</h1>
+            <h6 class="hh2">Works seamlessly with your marketing and sales stack. Track your lead in real time and engage in active conversations quickly.</h6>
+        </div>
+        <div class="w3-half">
+            <img src="assets/integrate.png" alt="not_supported" width="105%">
+        </div>
+    </div>
+    <!--Last one-->
+    <div class="w3-display-container bkg" style="padding: 40px 10px;">
+        <h1 class="hh5 w3-center">Drive Product Qualified Leads Like No One Else</h1>
+        <a href="contact.html"><button class="last_btn">Contact Us Now!</button></a>
+    </div>
+    <!--Footer-->
+    <footer class="w3-display-container w3-row-padding" style="padding: 50px 10px 10px 8px;background-color: #f4f8ff;">
+        <div class="w3-col l6 m6 s12">
+            <img src="#" alt="not_supported" >
+            <p style="padding:10px 0px 20px 0px;color: grey;" class="hhh9">Build rich product experiences with our no-code platform to wow your customers</p>  
+        </div>
+
+        <div class="w3-col l3 m3 s12" id="fooot_h1">
+            <h5 style="font-size: 20px;font-weight: 800;">Company</h5>
+            <a href="#">Home</a><br>
+            <a href="#works">How It's Work</a><br>
+            <a href="legal.html">Legal Notice</a>
+        </div>
+        <div class="w3-col l3 m3 s12">
+            <h5 style="font-size: 20px;font-weight: 800;">Useful Links</h5>
+            <a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a><br>
+            <a href="contact.html">Contact Us</a><br>
+            <span>
+                <a href="#"><i class="fab fa-facebook-f" ></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </span>
+        </div>
+        <div class="w3-display-container w3-col l12 m12 s12" style="height: 48px;background-color: #f4f8ff;">
+            <hr style="margin-bottom: -13px;">
+            <p class="w3-center" style="font-weight: 900px;">Copyright ©2020 <a href="#" style="color: #8a2cdc;">Storylane.</a></p>
+        </div>
+    </footer>
+
+    <script src="file.js" type="text/javascript"></script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+    </script>
+</body>
+</html>
