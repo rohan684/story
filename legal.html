@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
+    <link rel="stylesheet" href="style/design.css?v=1"/>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" width="100%">    
+    <title>Demo Craze | Legal Notice</title>
+    <style>
+        .xx1{
+          width: 100%;
+        }
+        h3{
+          font-weight: 700;
+        }
+        h4{
+          opacity: .8;
+          padding-left: 5px;
+        }
+        .cc1{
+          font-weight: 900; 
+          font-size: 75px;
+        }
+        .legal{
+            padding:100px 20%;
+            padding-bottom: 100px;
+            
+        }
+        @media (max-width: 480px){
+          .xx1{
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 10px;
+          }
+          .cc1{
+            font-size: 60px;
+            line-height: 55px;
+            font-family: calibri;
+          }
+          .legal{
+            padding: 90px 20px;
+          }
+        }
+      </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-row nav-container"  >
+          <a href="index.html" class="w3-bar-item w3-col l4 m4 s6" style="padding-top: 2px;padding-bottom: 3px;"><img src="assets/logos.png" alt="Not supported" class="logo_image"></a>
+          <div class="w3-col l8 m8 s6" id="nav_bar" style="padding: 10px;">
+                <a href="index.html" class="w3-bar-item w3-hide-small">Home</a>
+                <a href="index.html#works" class="w3-bar-item w3-hide-small">How it's work</a>
+                <a href="contact.html" class="w3-bar-item w3-hide-small">Contact</a>
+                <button class="w3-bar-item w3-hide-small w3-right" onclick="document.getElementById('id01').style.display='block'"><a href="#" >Try Demo</a>
+                </button>
+                <a href="#" onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-hide-small w3-right">Login</a>
+                <a href="javascript:void(0)" style="color:#8a2cdc;" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+            </div>
+          </div>
+          
+          <div id="demo" class="w3-bar-block w3-animate-bottom w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="index.html#work" class="w3-bar-item w3-button">How its's work</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="#" onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">Login</a>
+            <a href="#" onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">Try Demo</a>
+          </div>
+    </div>
+     <!--popup-->
+     <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+              <form class="login_popup">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright w3-red cros_btn">&times;</span>
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password">
+                  <button>Login</button>
+              </form>
+        </div>
+    </div>
+
+     <!--Legal notice-->
+     <div class="w3-container display legal" >
+        <div class="display xx1 w3-left">
+            <h1 class="cc1">Legal Notice</h1>
+            <h3>Arthur Tech Solutions Private Limited</h3>
+            <h4>C-340 FF Brij Vihar,Ghaziabad - 201011<br> India</h4>
+            <h3>Chief Executive Officer</h3>
+            <h4>Akshat Singh</h4>
+            <h3>Managing Directors</h3>
+            <h4>Henry Frederick<br>Rohan Frederick</h4>
+            <h3>PAN Number</h3>
+            <h4>AAVCA5195N</h4>
+            <h3>GST</h3>
+            <h4>09AAVCA5195N1ZM</h4>
+            <h4 style="padding-left: 0px;">We assume no liability for the content of websites linked to us<br> The owners of these linked websites take sole responsibility for their contents. </h4>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="w3-display-container w3-row-padding" style="padding: 50px 10px 0px 8px;background-color: #f4f8ff;">
+        <div class="w3-col l6 m6 s12">
+            <img src="assets/footer_logo.png" alt="not_supported" width="50%">
+            <p style="padding:10px 0px 20px 0px;color: grey;" class="hhh9">Build rich product experiences with our no-code platform to wow your customers. We built a bussiness of trust since 2020</p>  
+        </div>
+
+        <div class="w3-col l3 m3 s12">
+            <h5 style="font-size: 20px;font-weight: 800;">Company</h5>
+            <a href="index.html">Home</a><br>
+            <a href="index.html#works">How It's Work</a><br>
+            <a href="legal.html">Legal Notice</a>
+        </div>
+        <div class="w3-col l3 m3 s12">
+            <h5 style="font-size: 20px;font-weight: 800;">Useful Links</h5>
+            <a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a><br>
+            <a href="contact.html">Contact Us</a><br>
+            <span>
+                <a href="#"><i class="fab fa-facebook-f" ></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.linkedin.com/company/demo-craze"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </span>
+        </div>
+        <div class="w3-display-container w3-col l12 m12 s12" style="height: 48px;">
+            <hr style="margin-bottom: -20px;">
+            <p class="w3-center" style="font-weight: 900px;">Copyright ©2020 <a href="#" style="color: #8a2cdc;">Demo Craze.</a></p>
+        </div>
+    </footer>
+
+    <script src="file.js" type="text/javascript"></script>
+    
+</body>
+</html>

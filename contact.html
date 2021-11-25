@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
+    <link rel="stylesheet" href="style/design.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" width="100%">    
+    <title>Contact Us</title>
+    <style>
+        .nav-container{
+            color:white;
+        }
+        .aa1{
+            font-size: 45px;
+            color:white;
+            font-weight: 600;
+            margin-left: 70px;
+            margin-bottom: 40px;
+        }
+        #head span{
+            margin-left: 78px;
+            margin-top: 500px;
+            background-color: #112942;
+            padding: 12px 20px;
+            color: #8a2cdc;
+        }
+        #head span a{
+            color: white;
+        }
+        #head span a:hover{
+            color:red;
+        }
+        #contact h1{
+            font-weight: 800;
+            font-size: 40px;
+            text-align: center;
+        }
+        .display{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        #contact input{
+            outline: none;
+        }
+        #contact input:focus{
+            border-color:2px solid #8a2cdc;
+        }
+        button{
+            background-color: #8a2cdc;
+            outline: none;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 7px 28px;
+        }
+        button:hover{
+            background-color: #112942;
+            color:white;
+            border: 1px solid whitesmoke;
+        }
+        .card{
+            background-color: #f4f8ff;
+            border-radius: 0px 35px 0px 35px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: -webkit-linear-gradient(transparent 50%,#8a2cdc 50%);
+            background-size: 100% 220%;
+            transition: all .5s ease-out;
+        }
+        .card:hover{
+            color:white;
+            background-position: 0 180px;
+        }
+        @media (max-width:480px){
+            .aa1{
+                margin-top: -100px;
+                margin-left: 2px;
+                font-size: 38px;
+            }
+            #head span{
+                margin-left: 2px;
+                margin-top: -60px;
+            }
+            input{
+                margin: 10px 0px 0px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-row nav-container"  >
+            <a href="index.html" class="w3-bar-item w3-col l4 m4 s6" style="padding-top: 2px;padding-bottom: 3px;"><img src="assets/logos.png" alt="Not supported" class="logo_image"></a>
+            <div class="w3-col l8 m8 s6" id="nav_bar" style="padding: 10px;">
+                <a href="index.html" class="w3-bar-item w3-hide-small">Home</a>
+                <a href="index.html#works" class="w3-bar-item w3-hide-small">How it's work</a>
+                <a href="#" class="w3-bar-item w3-hide-small">Contact</a>
+                <button class="w3-bar-item w3-hide-small w3-right" onclick="document.getElementById('id01').style.display='block'"><a href="#" >Try Demo</a>
+                </button>
+                <a href="#" class="w3-bar-item w3-hide-small w3-right" onclick="document.getElementById('id01').style.display='block'">Login</a>
+                <a href="javascript:void(0)" style="color:#8a2cdc;" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+          
+          <div id="demo" class="w3-bar-block w3-animate-bottom w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="index.html#work" class="w3-bar-item w3-button">How its's work</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'">Login</a>
+            <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'">Try Demo</a>
+          </div>
+    </div>
+     <!--popup-->
+     <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+              <form class="login_popup">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright w3-red cros_btn">&times;</span>
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password">
+                  <button>Login</button>
+              </form>
+        </div>
+    </div>
+    <header class="w3-display-container w3-row cncbkg" style="padding: 150px 10px;" id="head">
+        <div>
+            <h1 class="aa1">Contact Us</h1>
+            <span><a href="index.html">Home /</a> Contact Us</span>
+        </div>
+    </header>
+    <!--Cards-->
+    <div class="w3-display-container w3-row-padding display" style="padding: 50px 10px;width: 90%;">
+        <div class="w3-col m4">
+            <div class="w3-card-4 w3-row card" style="padding: 20px;">                
+                <div class="w3-col l2 m2 s2 iclass">
+                    <i class="fas fa-map-marker-alt" style="padding-top: 20px;font-size: 30px;"></i>
+                </div>
+                <div class="w3-col l10 m10 s10">
+                    <h3 style="font-weight: 700;" class="hh3">Address</h3>
+                    <p>C-340 FF Brij Vihar,Ghaziabad - 201011
+                        India</p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col m4">
+            <div class="w3-card-4 w3-row card" style="padding: 20px;">                
+                <div class="w3-col l2 m2 s2">
+                    <i class="far fa-envelope" style="padding-top: 20px;font-size: 30px;"></i>
+                </div>
+                <div class="w3-col l10 m10 s10">
+                    <h3 style="font-weight: 700;">Mail</h3>
+                    <p>hello@me.gmail<br>hii@gmail</p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col m4">
+            <div class="w3-card-4 w3-row card" style="padding: 20px;">                
+                <div class="w3-col l2 m2 s2">
+                    <i class="fas fa-phone-alt" style="padding-top: 20px;font-size: 30px;"></i>
+                </div>
+                <div class="w3-col l10 m10 s10">
+                    <h3 style="font-weight: 700;">Phone</h3>
+                    <p>9816452760<br>0112754678</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Form-->
+    <div class="w3-display-container" style="padding: 40px 20px;" id="contact">
+        <h1>Get in Touch With Us</h1>
+        <form action="#" style="width: 80%;display: block;margin-left: auto;margin-right: auto;margin-top: 100px;">
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="First Name">
+                </div>
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Last Name">
+                </div>
+            </div><br>
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="email" placeholder="Email">
+                </div>
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Phone">
+                </div>
+            </div><br>
+            <div class="w3-row-padding" style="width: 98%;margin-left: 10px;">
+                <textarea class="w3-input w3-border"  cols="25" rows="10"></textarea><br><br>
+                <button>Submit</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <!--Footer-->
+    <footer class="w3-display-container w3-row-padding" style="padding: 50px 10px 10px 8px;background-color: #f4f8ff;;">
+        <div class="w3-col l6 m6 s12">
+            <img src="assets/footer_logo.png" alt="not_supported" width="50%">
+            <p style="padding:10px 0px 20px 0px;color: grey;" class="hhh9">Build rich product experiences with our no-code platform to wow your customers. We built a bussiness of trust since 2020</p>  
+        </div>
+
+        <div class="w3-col l3 m3 s12">
+            <h5 style="font-size: 20px;font-weight: 800;">Company</h5>
+            <a href="index.html">Home</a><br>
+            <a href="index.html#works">How It's Work</a><br>
+            <a href="legal.html">Legal Notice</a>
+        </div>
+        <div class="w3-col l3 m3 s12">
+            <h5 style="font-size: 20px;font-weight: 800;">Useful Links</h5>
+            <a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a><br>
+            <a href="contact.html">Contact Us</a><br>
+            <span>
+                <a href="#"><i class="fab fa-facebook-f" ></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.linkedin.com/company/demo-craze"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </span>
+        </div>
+        <div class="w3-display-container w3-col l12 m12 s12" style="height: 48px;background-color: #f4f8ff;">
+            <hr style="margin-bottom: -10px;">
+            <p class="w3-center" style="font-weight: 900px;">Copyright ©2020 <a href="#" style="color: #8a2cdc;">Demo Craze.</a></p>
+        </div>
+    </footer>
+
+    <script src="file.js" type="text/javascript"></script>
+    
+</body>
+</html>
