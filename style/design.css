@@ -173,12 +173,12 @@ marquee{
 .cards_3{
     background: -webkit-linear-gradient(0deg,transparent 50%,#8a2cdc 50%);
     background-color: white;
-    background-size: 225% 120%;
+    background-size: 235% 120%;
     transition: all .5s ease-out;
 }
 .cards_3:hover{
     color:white;
-    background-position: -390px 0;
+    background-position: -480px 0;
 }
 .display{
     display: block;
@@ -424,7 +424,7 @@ footer div{
         width: 98%;
     }
     .cards_3{
-        background-size: 225% 120%;
+        background-size: 218% 120%;
         transition: all .5s ease-out;
     }
     .cards_3:hover{
